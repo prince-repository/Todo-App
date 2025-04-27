@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Satisfy&family=Allura&display=swap');
+
+.heading-font{
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 5px;
+  padding-right: 10px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Satisfy', cursive;
+
+  font-family: 'Allura', cursive;
+  background: linear-gradient(
+    90deg, 
+    red 20%, 
+    orange 30%,
+    deeppink 60%,
+    yellow 90%
+   
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
