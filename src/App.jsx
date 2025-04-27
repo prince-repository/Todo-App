@@ -44,26 +44,26 @@ function App() {
   return (
     // <section className="flex flex-col  h-full ">
     <section
-      className={`flex flex-col h-full min-h-screen transition-all duration-500 
+      className={`flex flex-col h-full w-full  transition-all duration-500  
     ${lightMode ? "bg-white text-black" : "bg-gray-900 text-white"}`}
     >
-      <div className="flex justify-center items-center  relative  shadow-lg">
+      <div className="flex justify-center items-center w-full  relative  shadow-lg">
         <h1 className="heading-font ">TODO APP</h1>
         <MdSunny
-          className={`absolute left-350  text-3xl cursor-pointer 
+          className={`absolute   left-5 sm:left-30  text-3xl cursor-pointer 
        ${lightMode === true ? "inline-block" : "hidden"}`}
           values={lightMode}
           onClick={onHandleMode}
         />
         <FaMoon
-          className={`  absolute left-350  text-3xl cursor-pointer 
+          className={`  absolute left-5 sm:left-30    text-3xl cursor-pointer 
        ${lightMode === false ? "inline-block " : "hidden"}`}
           values={lightMode}
           onClick={onHandleMode}
         />
       </div>
 
-      <TodoForm
+       <TodoForm
         value={value}
         setValue={setValue}
         data={data}
@@ -80,7 +80,7 @@ function App() {
         setPriority={setPriority}
         lightMode={lightMode}
       />
-   
+  
    <Filters   
      searchTerm={searchTerm}
      setSearchTerm={setSearchTerm}
@@ -96,6 +96,7 @@ function App() {
      setData={setData}
    />
 
+ 
       <TodoList
         data={data}
         setData={setData}
@@ -113,6 +114,8 @@ function App() {
         categoryFilter={categoryFilter}
       
       />
+
+      
     </section>
   );
 }
